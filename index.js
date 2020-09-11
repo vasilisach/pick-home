@@ -15,33 +15,5 @@
     if (mainMenu) {
       mainMenu.classList.toggle('menu--active');
     }
-
-    /*if (navWrapper) {
-      if (navWrapper.dataset.status === 'closed') {
-        navWrapper.dataset.status = 'opened';
-      } else {
-        navWrapper.dataset.status = 'closed';
-      }
-
-      if (navWrapper.classList.contains('page-header__nav-wrapper--transparent')) {
-        navWrapper.classList.remove('page-header__nav-wrapper--transparent');
-      } else {
-        if (coordY < SCROLL_Y_VALUE) {
-          navWrapper.classList.add('page-header__nav-wrapper--transparent');
-        }
-      }
-    }*/
-  }
-
-  function scrollWindow() {
-    coordY = window.pageYOffset;
-
-    if (navWrapper.dataset.status === 'closed') {
-      if (coordY > SCROLL_Y_VALUE) {
-        navWrapper.classList.remove('page-header__nav-wrapper--transparent');
-      } else {
-        navWrapper.classList.add('page-header__nav-wrapper--transparent');
-      }
-    }
   }
 })();
