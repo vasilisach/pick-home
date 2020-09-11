@@ -54,7 +54,7 @@
   .screen-features-tablet {
     display: block;
     position: relative;
-    left: 19px;
+    left: 18px;
   }
 }
 @media screen and (min-width: 1200px) {
