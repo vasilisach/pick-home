@@ -1,0 +1,30 @@
+@import './variables.css';
+@import './fonts.css';
+@import './blocks/main-page-header.css';
+@import './blocks/main-page-header-content.css';
+@import './blocks/main-content.css';
+@import './blocks/features.css';
+@import './blocks/download-app.scss';
+@import './blocks/efficiency.scss';
+@import './blocks/header-logo.scss';
+@import './blocks/main-menu.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: 'Open Sans';
+  color: #283645;
+  margin: 0;
+}
+
+.container {
+  padding: 0 20px;
+}

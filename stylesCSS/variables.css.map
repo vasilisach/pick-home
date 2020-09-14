@@ -1,0 +1,1 @@
+{"version":3,"file":"variables.css","sources":["variables.scss"],"sourcesContent":["$dark-blue: #1d2632;\n$white: #ffffff;\n$pink: #d22856;\n$black: #000000;\n$retina-dpi: 144dpi;"],"names":[],"mappings":""}
