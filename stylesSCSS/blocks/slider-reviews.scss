@@ -1,0 +1,122 @@
+.slider-reviews {
+  position: relative;
+  top: -56px;
+  padding: 50px 20px 30px;
+  text-align: center;
+  background-color: #ffffff;
+
+  @media screen and (min-width: 481px) {
+    top: 0;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding: 185px 130px 40px;
+    background-image: url("../../images/quote.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 73px;
+    background-size: 79px 63px;
+  }
+}
+
+.slider-reviews__slide {
+  height: 238px;
+  line-height: 30px;
+
+  @media screen and (min-width: 481px) {
+    height: 187px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.slider-reviews__author {
+  order: -1;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+
+  @media screen and (min-width: 481px) {
+    order: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    margin-top: 21px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.slider-reviews__author-description {
+  display: none;
+
+  @media screen and (min-width: 481px) {
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 18px;
+  }
+}
+
+.slider-reviews__quote {
+  margin: 0;
+  max-height: 180px;
+  overflow: hidden;
+
+  @media screen and (min-width: 481px) {
+    margin-bottom: 13px;
+    max-height: 90px;
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    position: relative;
+    max-height: 120px;
+    z-index: 2;
+  }
+}
+.slider-reviews__slider-nav {
+  display: none;
+  @media screen and (min-width: 1025px) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .slider-nav__slider-button--prev,
+    .slider-nav__slider-button--next {
+      position: absolute;
+      top: 50%;
+      width: 22px;
+      height: 41px;
+    }
+    .slider-nav__slider-button--next {
+      background-image: url('../../images/right-arrow.svg');
+      right: 130px;
+      @media screen and (min-resolution: 200dpi) {
+        background-image: url('../../images/right-arrow@2x.svg');
+      }
+    }
+    .slider-nav__slider-button--prev {
+      background-image: url('../../images/left-arrow.svg');
+      left: 130px;
+      @media screen and (min-resolution: 200dpi) {
+        background-image: url('../../images/left-arrow@2x.svg');
+      }
+    }
+    .slider-reviews__slides-wrapper {
+      width: 685px;
+      margin: 0 auto;
+    }
+}

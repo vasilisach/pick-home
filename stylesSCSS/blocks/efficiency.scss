@@ -1,12 +1,12 @@
 .efficiency {
   display: none;
 
-  @media screen and (min-width: 660px) {
+  @media screen and (min-width: 481px) {
     display: block;
     background-color: #ffffff;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1025px) {
     display: block;
     background-color: #f2f2f2;
   }
@@ -17,20 +17,18 @@
   padding: 60px 20px 72px;
   width: 280px;
 
-  @media screen and (min-width: 660px) {
+  @media screen and (min-width: 481px) {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
 
-  @media screen and (min-width: 1200px) {
-    padding: 17px 130px 66px;
-    width: 100%;
+  @media screen and (min-width: 1025px) {
+    padding: 17px 120px 66px;
   }
 }
 
 .efficiency__image {
-  box-sizing: border-box;
   padding: 75px 64px 51px;
   width: 238px;
   background-image: url("../../images/diagram-fill.svg"), url("../../images/timer.svg");
@@ -38,7 +36,7 @@
   background-size: 202px 202px, 238px 276px;
   background-position: 19px 55px, 0 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1025px) {
     padding: 94px 64px 64px 80px;
     width: 298px;
     background-size: 253px 253px, 298px 345px;
@@ -52,7 +50,7 @@
   line-height: 150px;
   color: #d22856;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1025px) {
     font-size: 120px;
     line-height: 187px;
   }
@@ -62,11 +60,12 @@
   margin-top: 11px;
   margin-left: 70px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1025px) {
     margin-top: 65px;
-    width: 573px;
+    max-width: 490px;
     font-size: 18px;
     line-height: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -79,7 +78,7 @@
   line-height: 36px;
   color: #000000;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1025px) {
     margin-top: 24px;
     margin-bottom: 22px;
     width: auto;
@@ -90,7 +89,7 @@
   margin-top: 10px;
   margin-bottom: 11px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1025px) {
     margin-top: 22px;
     margin-bottom: 31px;
   }

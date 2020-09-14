@@ -30,7 +30,7 @@
 .screen-features-tablet {
   display: none;
 }
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 481px) {
   .features {
     background-image: url("../../images/grey-shape-tablet.svg");
     background-position-y: -7px;
@@ -41,7 +41,7 @@
     padding: 20px;
     padding-top: 75px;
     background-image: url("../../images/iphone-features-tablet.svg");
-    background-position: 5% 5%;
+    background-position: 20px 5%;
     background-repeat: no-repeat;
   }
   .features__list {
@@ -54,10 +54,10 @@
   .screen-features-tablet {
     display: block;
     position: relative;
-    left: 18px;
+    left: 13px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   .features {
     background-image: url("../../images/grey-shape-desktop.svg");
     background-position-y: unset;

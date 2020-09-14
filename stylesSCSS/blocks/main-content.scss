@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 481px) {
   .main-content {
     top: 0;
   }
@@ -31,7 +31,7 @@
     line-height: 48px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
   .main-content__titles {
     padding: 67px 10px 76px;
   }

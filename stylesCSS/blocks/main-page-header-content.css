@@ -6,6 +6,19 @@
   background-position: center;
   background-size: cover;
   min-height: 462px; }
+  @media screen and (min-resolution: 144dpi) and (min-width: 320px) {
+    .header-content {
+      background-image: url("../../images/back-mobile@2x.jpg"); } }
+  .header-content__iphone5-in-hand-img {
+    position: absolute;
+    top: 175px;
+    right: -10px;
+    width: 498px; }
+  .header-content__iphone-screen-img {
+    position: absolute;
+    top: 204px;
+    right: 108px;
+    width: 111px; }
 
 .iphone-image {
   position: relative;
@@ -29,16 +42,12 @@
 .iphone-image--desktop {
   display: none; }
 
-@media screen and (min-resolution: 144dpi) and (min-width: 320px) {
-  .header-content {
-    background-image: url("../../images/back-mobile@2x.jpg"); } }
-
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 481px) {
   .header-content {
     background-image: url("../../images/back-tablet@1x.jpg");
     background-position: cover;
     min-height: 729px;
-    max-width: 1200px; }
+    max-width: 1025px; }
   .iphone-image--mobile {
     display: none; }
   .iphone-image--desktop {
@@ -83,20 +92,8 @@
     right: 121px;
     top: 77px; } }
 
-@media screen and (min-resolution: 144dpi) and (min-width: 1200px) {
+@media screen and (min-resolution: 144dpi) and (min-width: 1025px) {
   .header-content {
     background-image: url("../../images/back-desktop@2x.jpg"); } }
-
-.header-content__iphone5-in-hand-img {
-  position: absolute;
-  top: 175px;
-  right: -10px;
-  width: 498px; }
-
-.header-content__iphone-screen-img {
-  position: absolute;
-  top: 204px;
-  right: 108px;
-  width: 111px; }
 
 /*# sourceMappingURL=main-page-header-content.css.map */
