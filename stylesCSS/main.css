@@ -863,30 +863,35 @@
   display: flex;
   align-items: center;
   justify-content: space-between; }
-
-.footer-logo {
-  display: block;
-  width: 146px;
-  height: 40px;
-  color: #1d2632; }
-  .footer-logo[href]:hover {
-    color: #d22856; }
-  .footer-logo[href]:active {
-    opacity: 0.3; }
+  @media screen and (min-width: 481px) {
+    .page-footer__content-wrapper {
+      padding: 0 20px;
+      height: 127px; } }
+  @media screen and (min-width: 1025px) {
+    .page-footer__content-wrapper {
+      padding: 0 130px;
+      height: 197px; } }
 
 .footer-logo__image {
-  display: block;
-  width: 146px;
-  height: 40px;
-  fill: currentColor;
-  pointer-events: none; }
-  @media screen and (min-width: 481px) {
-    .footer-logo__image--mobile {
-      display: none; } }
+  cursor: pointer;
+  margin-bottom: 20px; }
+  .footer-logo__image:hover {
+    fill: #d22856; }
+  .footer-logo__image:active {
+    fill: #283645;
+    opacity: 0.3; }
   .footer-logo__image--tablet {
     display: none; }
     @media screen and (min-width: 481px) {
       .footer-logo__image--tablet {
+        display: block; } }
+    @media screen and (min-width: 1025px) {
+      .footer-logo__image--tablet {
+        display: none; } }
+  .footer-logo__image--desktop {
+    display: none; }
+    @media screen and (min-width: 1025px) {
+      .footer-logo__image--desktop {
         display: block; } }
 
 .social-links {
@@ -904,7 +909,8 @@
       max-width: 600px; } }
 
 .social-links__item {
-  margin: 0 6px; }
+  margin: 0 6px;
+  list-style: none; }
   @media screen and (min-width: 481px) {
     .social-links__item {
       margin: 0 3px 0 9px; } }
@@ -935,6 +941,21 @@
   margin: auto;
   fill: currentColor;
   pointer-events: none; }
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center; }
+
+.page-footer__copyright-icon {
+  fill: #d22856;
+  margin-top: 10px; }
+  .page-footer__copyright-icon:hover {
+    fill: #283645; }
+  .page-footer__copyright-icon:active {
+    opacity: 0.3; }
+
+.page-footer__copyright-text {
+  margin-right: 15px; }
 
 .price {
   padding-top: 91px;
