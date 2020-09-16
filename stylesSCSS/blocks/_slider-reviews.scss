@@ -1,7 +1,7 @@
 .slider-reviews {
   position: relative;
   top: -56px;
-  padding: 50px 20px 30px;
+  padding: 50px 20px 0;
   text-align: center;
   background-color: $white;
 
@@ -132,4 +132,7 @@
       width: 685px;
       margin: 0 auto;
     }
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 0 !important;
 }

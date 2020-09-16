@@ -218,7 +218,7 @@
 
       <section class="price" id="price">
 
-        <div class="price__slider content-wrapper">
+        <div class="price__slider">
           <table class="price__table table-price">
             <thead>
               <tr>
@@ -228,7 +228,8 @@
                   <span class="table-price__license-type">База</span>
                   <span class="table-price__license-price">1,99 USD</span>
                 </th>
-                <th class="table-price__header table-price__header--hit" data-hit-text="Хит">
+                <th class="table-price__header">
+                  <div class="ribbon ribbon-top-left"><span>ХИТ</span></div>
                   <span class="table-price__license-type">Стандарт</span>
                   <span class="table-price__license-price">3,99 USD</span>
                 </th>
@@ -243,17 +244,17 @@
               <tr>
                 <td class="table-price__cell">Розовый фильтр</td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Розовый фильтр">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--true"></span>
                   </div>
                 </td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Розовый фильтр">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--true"></span>
                   </div>
                 </td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Розовый фильтр">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--true"></span>
                   </div>
                 </td>
@@ -262,17 +263,17 @@
               <tr>
                 <td class="table-price__cell">Смайлики</td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Смайлики">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--false"></span>
                   </div>
                 </td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Смайлики">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--true"></span>
                   </div>
                 </td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Смайлики">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--true"></span>
                   </div>
 
@@ -282,17 +283,17 @@
               <tr>
                 <td class="table-price__cell">Комментарии</td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Комментарии">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--false"></span>
                   </div>
                 </td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Комментарии">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--false"></span>
                   </div>
                 </td>
                 <td class="table-price__cell">
-                  <div class="table-price__feature" data-feature-name="Комментарии">
+                  <div class="table-price__feature">
                     <span class="table-price__feature-value table-price__feature-value--true"></span>
                   </div>
                 </td>
@@ -340,7 +341,7 @@
         </div>
       </section>
 
-      <!--<div class="map">
+      <div class="map">
         <picture>
           <source media="(min-width: 1025px)"
             srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
@@ -351,7 +352,8 @@
         </picture>
 
         <div class="map__marker"></div>
-      </div>-->
+        <div class="map__interactive" id="map"></div>
+      </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__content-wrapper">
