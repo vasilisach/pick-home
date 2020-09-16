@@ -1,0 +1,123 @@
+.efficiency {
+  display: none;
+  position: relative;
+  @media screen and (min-width: 481px) {
+    display: block;
+    background-color: $white;
+  }
+  @media screen and (min-width: 1025px) {
+    display: block;
+    background-color: $silver;
+  }
+}
+
+.efficiency__content-wrapper {
+  margin: 0 auto;
+  padding: 60px 20px 72px;
+  width: 280px;
+
+  @media screen and (min-width: 481px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding: 17px 120px 66px;
+  }
+}
+
+.efficiency__image {
+  padding: 75px 64px 51px;
+  @media screen and (min-width: 1025px) {
+    padding: 94px 64px 64px 80px;
+  }
+}
+
+.efficiency__image-timer {
+  @media screen and (min-width: 481px) {
+    width: 238px;
+    height: 276px;
+    position: absolute;
+    top: 57px;
+    left: 20px;
+  }
+  @media screen and (min-width: 1025px) {
+    width: 298px;
+    height: 345px;
+    position: absolute;
+    left: 121px;
+    top: 15px;
+  }
+}
+.efficiency__image-round-diagram {
+  @media screen and (min-width: 481px) {
+    width: 202px;
+    height: 202px;
+    position: absolute;
+    top: 113px;
+    left: 38px;
+  }
+  @media screen and (min-width: 1025px) {
+    width: 253px;
+    height: 253px;
+    position: absolute;
+    top: 85px;
+    left: 143px;
+  }
+}
+
+.efficiency__image-text {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 150px;
+  color: $pink;
+
+  @media screen and (min-width: 1025px) {
+    font-size: 120px;
+    line-height: 187px;
+  }
+}
+
+.efficiency__description {
+  margin-top: 11px;
+  margin-left: 70px;
+
+  @media screen and (min-width: 1025px) {
+    margin-top: 65px;
+    max-width: 490px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+}
+
+.efficiency__title {
+  margin-top: 23px;
+  margin-bottom: 10px;
+  width: 200px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: $black;
+
+  @media screen and (min-width: 1025px) {
+    margin-top: 24px;
+    margin-bottom: 22px;
+    width: auto;
+  }
+}
+
+.efficiency__text {
+  margin-top: 10px;
+  margin-bottom: 11px;
+
+  @media screen and (min-width: 1025px) {
+    margin-top: 22px;
+    margin-bottom: 31px;
+  }
+}
+
+.efficiency__link {
+  color: $pink;
+}

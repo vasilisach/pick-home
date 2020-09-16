@@ -1,19 +1,40 @@
 (function () {
+  //review slider
   $(document).ready(function () {
     
-    $('#review-slides').slick({
-      dots: true,
-      infinite: true,
-      arrows: true
-    });
+    if (document.body.clientWidth > 1023) {
+      $('#review-slides').slick({
+        dots: false,
+        infinite: true,
+      });
+    } else {
+      $('#review-slides').slick({
+        dots: true,
+        infinite: true,
+      });
+    }
+    
+    $('#price-slider').slick()
+
     const prevBtn = document.querySelector('.slider-nav__slider-button--prev');
     const nextBtn = document.querySelector('.slider-nav__slider-button--next');
+    
     if (nextBtn && prevBtn) {
       prevBtn.addEventListener('click', clickPrevSlideBtn);
       nextBtn.addEventListener('click', clickNextSlideBtn);
     }
 
-    const menuButton = document.querySelector('.menu-icon');
+  })
+
+  function clickPrevSlideBtn(event) {
+    $("#review-slides").slick('slickPrev');
+  }
+  function clickNextSlideBtn(event) {
+    $("#review-slides").slick('slickNext');
+  }
+
+  //main menu
+  const menuButton = document.querySelector('.menu-icon');
     const mainMenu = document.querySelector('.menu');
     const navBar = document.querySelector('.main-page-header__wrapper');
 
@@ -30,11 +51,5 @@
         mainMenu.classList.toggle('menu--active');
       }
     }
-    function clickPrevSlideBtn(event) {
-      $("#review-slides").slick('slickPrev');
-    }
-    function clickNextSlideBtn(event) {
-      $("#review-slides").slick('slickNext');
-    }
-  });
-})();
+    
+})()

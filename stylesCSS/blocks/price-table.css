@@ -1,0 +1,142 @@
+.table-price {
+  width: 834px;
+  border-spacing: 0; }
+  @media screen and (min-width: 481px) {
+    .table-price {
+      width: 100%; } }
+
+.table-price__header {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border-right: 2px solid lightgrey;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #1d2632; }
+  @media screen and (min-width: 481px) {
+    .table-price__header {
+      padding-top: 10px;
+      padding-bottom: 8px; } }
+  @media screen and (min-width: 1025px) {
+    .table-price__header {
+      padding-top: 16px;
+      padding-bottom: 22px; } }
+  .table-price__header:first-child {
+    display: none;
+    border-right: 0;
+    border-bottom: 2px solid lightgrey;
+    background-color: transparent; }
+    @media screen and (min-width: 481px) {
+      .table-price__header:first-child {
+        display: table-cell; } }
+  .table-price__header:last-child {
+    border-right-color: #1d2632; }
+  .table-price__header--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-size: image-size("../img/bg-hit.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+    @media screen and (min-width: 481px) {
+      .table-price__header--hit {
+        background-image: url("../img/bg-hit-tablet.svg");
+        background-size: image-size("../img/bg-hit-tablet.svg"); } }
+    @media screen and (min-width: 1025px) {
+      .table-price__header--hit {
+        background-image: url("../img/bg-hit.svg");
+        background-size: image-size("../img/bg-hit.svg"); } }
+  .table-price__header--hit::before {
+    content: attr(data-hit-text);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff; }
+    @media screen and (min-width: 481px) {
+      .table-price__header--hit::before {
+        top: 3px;
+        left: 7px; } }
+    @media screen and (min-width: 1025px) {
+      .table-price__header--hit::before {
+        top: 12px;
+        left: 12px; } }
+
+.table-price__license-type,
+.table-price__license-price {
+  display: block; }
+
+.table-price__license-type {
+  font-weight: bold; }
+  @media screen and (min-width: 481px) {
+    .table-price__license-type {
+      font-size: 16px; } }
+  @media screen and (min-width: 1025px) {
+    .table-price__license-type {
+      font-size: 18px; } }
+
+.table-price__license-price {
+  font-size: 24px;
+  font-weight: 300; }
+  @media screen and (min-width: 481px) {
+    .table-price__license-price {
+      font-size: 18px; } }
+  @media screen and (min-width: 1025px) {
+    .table-price__license-price {
+      font-size: 24px; } }
+
+.table-price__cell {
+  padding: 15px 18px 14px 22px;
+  border-right: 2px solid lightgrey;
+  border-bottom: 2px solid lightgrey;
+  background-color: #ffffff; }
+  @media screen and (min-width: 481px) {
+    .table-price__cell {
+      padding: 7px 20px 8px;
+      width: 25%; } }
+  @media screen and (min-width: 1025px) {
+    .table-price__cell {
+      padding: 14px 20px 15px; } }
+  .table-price__cell:first-child {
+    display: none;
+    border-left: 2px solid lightgrey; }
+    @media screen and (min-width: 481px) {
+      .table-price__cell:first-child {
+        display: table-cell;
+        padding-left: 14px;
+        padding-right: 14px;
+        text-transform: none; } }
+    @media screen and (min-width: 1025px) {
+      .table-price__cell:first-child {
+        padding-left: 21px;
+        padding-right: 21px;
+        font-size: 18px; } }
+
+.table-price__feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (min-width: 481px) {
+    .table-price__feature {
+      justify-content: center; } }
+  .table-price__feature::before {
+    content: attr(data-feature-name); }
+    @media screen and (min-width: 481px) {
+      .table-price__feature::before {
+        content: ""; } }
+
+.table-price__feature-value {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
+  .table-price__feature-value--true {
+    width: 31px;
+    height: 23px;
+    background-image: url("../img/icon-yes.svg"); }
+  .table-price__feature-value--false {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-no.svg"); }
+
+/*# sourceMappingURL=price-table.css.map */

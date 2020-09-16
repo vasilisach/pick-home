@@ -61,11 +61,11 @@
     right: 81px;
     top: 66px; } }
 
-/*@media screen and (min-resolution: 144dpi) and (min-width: 660px) {
+@media screen and (min-resolution: 144dpi) and (min-width: 660px) {
   .header-content {
     background-image: url("../../images/back-tablet@2x.jpg");
   }
-}*/
+}
 @media screen and (min-width: 1199px) {
   .header-content {
     background-image: url("../../images/back-desktop@1x.jpg");

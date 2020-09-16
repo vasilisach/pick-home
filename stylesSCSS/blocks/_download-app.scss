@@ -1,0 +1,100 @@
+.download-app {
+  background-color: $dark-blue;
+  min-height: 271px;
+  text-align: center;
+  position: relative;
+  top: 462px;
+  &__header {
+    display: none;
+    color: $white;
+    font-size: 40px;
+    font-weight: 300;
+    margin: 0 50px;
+  }
+  &__button {
+    border: 3px solid $white;
+    color: $white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    background-color: transparent;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin: 28px auto;
+    outline: none;
+    &:hover {
+      background-color: $white;
+      border: 3px solid $white;
+      box-shadow: 0 5px 7px rgba(1, 1, 1, 0.75);
+      color: $pink;
+    }
+    &:active {
+      color: fade-out($pink, 0.3);
+    }
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2px 37px 28px;
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    color: $white;
+    margin: 10px 25px; 
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+
+
+@media screen and (min-width: 481px) {
+  .download-app {
+    background-color: transparent;
+    max-width: 335px;
+    top: 195px;
+    &__header {
+      display: block;
+    }
+    &__button {
+      padding: 20px 50px;
+    }
+    .download-app__text {
+      font-size: 18px;
+      margin: 0;
+    }
+    .download-app__icons {
+      margin: 12px 40px 40px 40px;
+    }
+  }
+}
+@media screen and (min-width: 1025px) {
+  .download-app {
+    background-color: transparent;
+    top: 175px;
+    left: 110px;
+    &__header {
+      display: block;
+    }
+    &__button {
+      padding: 20px 33px;
+      font-size: 21px;
+      margin: 50px 0;
+    }
+    &__text {
+      font-size: 18px;
+      margin: 0;
+    }
+    &__icons {
+      margin: 0 50px 50px 50px;
+    }
+  }
+}

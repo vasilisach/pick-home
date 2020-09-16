@@ -1,0 +1,33 @@
+.main-page-header {
+  color: $white;
+}
+.main-page-header__wrapper {
+  background-color: #1d263299;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.main-page-header__wrapper--active {
+  position: static;
+  background-color: $dark-blue;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .main-page-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 130px;
+  }
+  .nav-bar {
+    padding: 0;
+    display: block;
+  }
+}

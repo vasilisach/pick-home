@@ -1,0 +1,231 @@
+.price {
+  padding-top: 91px;
+  padding-bottom: 32px;
+  background-color: $silver;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: 100% 25px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: 481px) {
+    padding-top: 86px;
+    padding-bottom: 69px;
+    background-size: 100% 50px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding-top: 150px;
+    padding-bottom: 95px;
+    background-size: 100% 80px;
+  }
+}
+
+.price__slider {
+  overflow: hidden;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.price__slider-controls {
+  margin-top: 40px;
+  margin-bottom: 15px;
+
+  @media screen and (min-width: 481px) {
+    display: none;
+  }
+}
+
+.price__table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.4s linear;
+
+  @media screen and (min-width: 481px) {
+    position: static;
+    left: auto;
+    transform: none;
+  }
+}
+.table-price {
+  width: 834px;
+  border-spacing: 0;
+
+  @media screen and (min-width: 481px) {
+    width: 100%;
+  }
+}
+
+.table-price__header {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border-right: 2px solid $lightgray;
+  font-size: 18px;
+  color: $white;
+  background-color: $dark-blue;
+
+  @media screen and (min-width: 481px) {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  &:first-child {
+    display: none;
+    border-right: 0;
+    border-bottom: 2px solid $lightgray;
+    background-color: transparent;
+
+    @media screen and (min-width: 481px) {
+      display: table-cell;
+    }
+  }
+
+  &:last-child {
+    border-right-color: $dark-blue;
+  }
+
+  &--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-size: image-size("../img/bg-hit.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 481px) {
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: image-size("../img/bg-hit-tablet.svg");
+    }
+
+    @media screen and (min-width: 1025px) {
+      background-image: url("../img/bg-hit.svg");
+      background-size: image-size("../img/bg-hit.svg");
+    }
+  }
+
+  &--hit::before {
+    content: attr(data-hit-text);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    transform: rotate(-45deg);
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+
+    @media screen and (min-width: 481px) {
+      top: 3px;
+      left: 7px;
+    }
+
+    @media screen and (min-width: 1025px) {
+      top: 12px;
+      left: 12px;
+    }
+  }
+}
+
+.table-price__license-type,
+.table-price__license-price {
+  display: block;
+}
+
+.table-price__license-type {
+  font-weight: bold;
+
+  @media screen and (min-width: 481px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 18px;
+  }
+}
+
+.table-price__license-price {
+  font-size: 24px;
+  font-weight: 300;
+
+  @media screen and (min-width: 481px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 24px;
+  }
+}
+
+.table-price__cell {
+  padding: 15px 18px 14px 22px;
+  border-right: 2px solid $lightgray;
+  border-bottom: 2px solid $lightgray;
+  background-color: $white;
+
+  @media screen and (min-width: 481px) {
+    padding: 7px 20px 8px;
+    width: 25%;
+  }
+
+  @media screen and (min-width: 1025px) {
+    padding: 14px 20px 15px;
+  }
+
+  &:first-child {
+    display: none;
+    border-left: 2px solid $lightgray;
+
+    @media screen and (min-width: 481px) {
+      display: table-cell;
+      padding-left: 14px;
+      padding-right: 14px;
+      text-transform: none;
+    }
+
+    @media screen and (min-width: 1025px) {
+      padding-left: 21px;
+      padding-right: 21px;
+      font-size: 18px;
+    }
+  }
+}
+
+.table-price__feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: 481px) {
+    justify-content: center;
+  }
+
+  &::before {
+    content: attr(data-feature-name);
+
+    @media screen and (min-width: 481px) {
+      content: "";
+    }
+  }
+}
+
+.table-price__feature-value {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--true {
+    width: 31px;
+    height: 23px;
+    background-image: url("../../images/icons/price-yes-icon.svg");
+  }
+
+  &--false {
+    width: 27px;
+    height: 27px;
+    background-image: url("../../images/icons/price-no-icon.svg");
+  }
+}

@@ -1,0 +1,123 @@
+.header-content {
+  position: relative;
+  color: $white;
+  background-image: url("../../images/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 462px;
+  @media screen and (min-resolution: $retina-dpi) and (min-width: 320px) {
+    background-image: url("../../images/back-mobile@2x.jpg");
+  }
+  &__iphone5-in-hand-img {
+    position: absolute;
+    top: 175px;
+    right: -10px;
+    width: 498px;
+  }
+  &__iphone-screen-img {
+    position: absolute;
+    top: 204px;
+    right: 108px;
+    width: 111px
+  }
+}
+.iphone-image {
+  position: relative;
+  top: 172px;
+}
+.iphone-image__item {
+  position: absolute;
+  right: -13px;
+}
+.iphone-image__item-screen {
+  position: absolute;
+  right: 100px;
+  top: 31px;
+  border: 2px solid #252527;
+  border-radius: 2px;
+}
+
+.iphone-image__item {
+  right: -13px;
+}
+.iphone-image--tablet {
+  display: none;
+}
+
+.iphone-image--desktop {
+  display: none;
+}
+
+
+@media screen and (min-width: 481px) {
+  .header-content {
+    background-image: url("../../images/back-tablet@1x.jpg");
+    background-position: cover;
+    min-height: 729px;
+    max-width: 1025px;
+  }
+  .iphone-image--mobile {
+    display: none;
+  }
+  .iphone-image--desktop {
+    display: none;
+  }
+  .iphone-image--tablet {
+    display: block;
+  }
+  .iphone-image__item {
+    right: -129px;
+    top: 13px;
+  }
+  .iphone-image__item-screen {
+    border: 3px solid #252527;
+    right: 79px;
+    top: 65px;
+  }
+}
+@media screen and (min-resolution: $retina-dpi) and (min-width: 660px) {
+  .header-content {
+    background-image: url("../../images/back-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 1025px) {
+  .header-content {
+    background-image: url("../../images/back-desktop@1x.jpg");
+    min-height: 853px;
+    max-width: 2560px;
+  }
+  .header-content__iphone5-in-hand-img {
+    top: 208px;
+    right: 20px;
+    min-width: 1050px;
+  }
+  .header-content__iphone-screen-img {
+    top: 272px;
+    right: 269px;
+    width: 230px;
+  }
+  .iphone-image {
+    right: 200px;
+  }
+  .iphone-image--mobile {
+    display: none;
+  }
+  .iphone-image--tablet {
+    display: none;
+  }
+  .iphone-image--desktop {
+    display: block;
+    top: 195px;
+  }
+  .iphone-image__item-screen {
+    border: 3px solid #252527;
+    right: 118px;
+    top: 76px;
+  }
+}
+@media screen and (min-resolution: $retina-dpi) and (min-width: 1025px) {
+  .header-content {
+    background-image: url("../../images/back-desktop@2x.jpg");
+  }
+}
