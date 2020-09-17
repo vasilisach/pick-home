@@ -761,6 +761,14 @@
 .slick-dotted.slick-slider {
   margin-bottom: 0 !important; }
 
+.slider-reviews__slider-controls {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  display: flex; }
+  @media screen and (min-width: 1025px) {
+    .slider-reviews__slider-controls {
+      display: none; } }
+
 .contacts {
   padding-top: 19px;
   padding-bottom: 38px;
@@ -1010,7 +1018,8 @@
 
 .price__slider-controls {
   margin-top: 40px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  display: flex; }
   @media screen and (min-width: 481px) {
     .price__slider-controls {
       display: none; } }
@@ -1177,37 +1186,6 @@
     height: 27px;
     background-image: url("../../images/icons/price-no-icon.svg"); }
 
-.slider-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 12px; }
-  @media screen and (min-width: 481px) {
-    .slider-controls {
-      display: none; } }
-
-.slider-controls__button {
-  box-sizing: content-box;
-  margin-left: 9px;
-  margin-right: 10px;
-  padding: 0;
-  width: 6px;
-  height: 6px;
-  border: 0;
-  border-radius: 50%;
-  font-style: inherit;
-  background-color: rgba(29, 38, 50, 0.7);
-  cursor: pointer;
-  outline: none; }
-  .slider-controls__button:not(.slider-controls__button--current):hover {
-    background-color: rgba(29, 38, 50, 0.4); }
-  .slider-controls__button:not(.slider-controls__button--current):active {
-    background-color: rgba(29, 38, 50, 0.9); }
-  .slider-controls__button--current {
-    box-shadow: 0 0 0 3px #1d2632;
-    background-color: transparent;
-    cursor: default; }
-
 .map {
   position: relative;
   z-index: 1;
@@ -1239,6 +1217,33 @@
     .map__marker {
       top: 58%;
       left: 63%; } }
+
+.slider-controls {
+  justify-content: center;
+  align-items: center;
+  height: 12px; }
+
+.slider-controls__button {
+  box-sizing: content-box;
+  margin-left: 9px;
+  margin-right: 10px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  font-style: inherit;
+  background-color: rgba(29, 38, 50, 0.7);
+  cursor: pointer;
+  outline: none; }
+  .slider-controls__button:not(.slider-controls__button--active):hover {
+    background-color: rgba(29, 38, 50, 0.4); }
+  .slider-controls__button:not(.slider-controls__button--active):active {
+    background-color: rgba(29, 38, 50, 0.9); }
+  .slider-controls__button--active {
+    box-shadow: 0 0 0 3px #1d2632;
+    background-color: transparent;
+    cursor: default; }
 
 html {
   box-sizing: border-box; }

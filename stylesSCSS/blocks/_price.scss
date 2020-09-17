@@ -34,6 +34,7 @@
 .price__slider-controls {
   margin-top: 40px;
   margin-bottom: 15px;
+  display: flex;
 
   @media screen and (min-width: 481px) {
     display: none;
@@ -243,44 +244,5 @@
     width: 27px;
     height: 27px;
     background-image: url("../../images/icons/price-no-icon.svg");
-  }
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 12px;
-  @media screen and (min-width: 481px) {
-    display: none;
-  }
-}
-
-.slider-controls__button {
-  box-sizing: content-box;
-  margin-left: 9px;
-  margin-right: 10px;
-  padding: 0;
-  width: 6px;
-  height: 6px;
-  border: 0;
-  border-radius: 50%;
-  font-style: inherit;
-  background-color: fade-out($dark-blue, 0.3);
-  cursor: pointer;
-  outline: none;
-
-  &:not(&--current):hover {
-    background-color: fade-out($dark-blue, 0.6);
-  }
-
-  &:not(&--current):active {
-    background-color: fade-out($dark-blue, 0.1);
-  }
-
-  &--current {
-    box-shadow: 0 0 0 3px $dark-blue;
-    background-color: transparent;
-    cursor: default;
   }
 }
