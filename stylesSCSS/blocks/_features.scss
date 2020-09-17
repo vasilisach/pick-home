@@ -1,6 +1,6 @@
 
 .features {
-  background-image: url("../../imagesmin/grey-shape-mobile.svg");
+  background-image: url("../../images/grey-shape-mobile.svg");
   background-repeat: no-repeat;
   background-position-y: -35px;
   text-align: center;
@@ -36,7 +36,7 @@
 }
 @media screen and (min-width: $tablet-width) {
   .features {
-    background-image: url("../../imagesmin/grey-shape-tablet.svg");
+    background-image: url("../../images/grey-shape-tablet.svg");
     background-position-y: -7px;
     height: 500px;
     text-align: left;
@@ -64,7 +64,7 @@
 }
 @media screen and (min-width: 1025px) {
   .features {
-    background-image: url("../../imagesmin/grey-shape-desktop.svg");
+    background-image: url("../../images/grey-shape-desktop.svg");
     background-position-y: unset;
     height: 700px;
   }

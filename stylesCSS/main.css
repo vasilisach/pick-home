@@ -193,7 +193,7 @@
   margin-bottom: 0; }
 
 .features {
-  background-image: url("../../imagesmin/grey-shape-mobile.svg");
+  background-image: url("../../images/grey-shape-mobile.svg");
   background-repeat: no-repeat;
   background-position-y: -35px;
   text-align: center; }
@@ -229,7 +229,7 @@
 
 @media screen and (min-width: 768px) {
   .features {
-    background-image: url("../../imagesmin/grey-shape-tablet.svg");
+    background-image: url("../../images/grey-shape-tablet.svg");
     background-position-y: -7px;
     height: 500px;
     text-align: left; }
@@ -252,7 +252,7 @@
 
 @media screen and (min-width: 1025px) {
   .features {
-    background-image: url("../../imagesmin/grey-shape-desktop.svg");
+    background-image: url("../../images/grey-shape-desktop.svg");
     background-position-y: unset;
     height: 700px; }
   .features__wrapper {
@@ -1005,20 +1005,20 @@
 .price {
   padding-top: 91px;
   padding-bottom: 32px;
-  background-image: url("../../imagesmin/grey-shape-mobile.svg");
+  background-image: url("../../images/grey-shape-mobile.svg");
   background-position: 0 -41px;
   background-repeat: no-repeat; }
   @media screen and (min-width: 768px) {
     .price {
       padding-top: 86px;
       padding-bottom: 69px;
-      background-image: url("../../imagesmin/grey-shape-tablet.svg");
+      background-image: url("../../images/grey-shape-tablet.svg");
       background-position: 0 0; } }
   @media screen and (min-width: 1025px) {
     .price {
       padding-top: 150px;
       padding-bottom: 95px;
-      background-image: url("../../imagesmin/grey-shape-desktop.svg");
+      background-image: url("../../images/grey-shape-desktop.svg");
       background-position: 0 0; } }
 
 .price__slider {
