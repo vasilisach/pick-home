@@ -57,14 +57,14 @@
 .header-content {
   position: relative;
   color: #ffffff;
-  background-image: url("../../images/back-mobile@1x.jpg");
+  background-image: url("../../imagesmin/back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 462px; }
   @media screen and (min-resolution: 200dpi) and (min-width: 320px) {
     .header-content {
-      background-image: url("../../images/back-mobile@2x.jpg"); } }
+      background-image: url("../../imagesmin/back-mobile@2x.jpg"); } }
   .header-content__iphone5-in-hand-img {
     position: absolute;
     top: 175px;
@@ -102,7 +102,7 @@
 
 @media screen and (min-width: 768px) {
   .header-content {
-    background-image: url("../../images/back-tablet@1x.jpg");
+    background-image: url("../../imagesmin/back-tablet@1x.jpg");
     background-position: cover;
     min-height: 729px;
     max-width: 1025px; }
@@ -122,11 +122,11 @@
 
 @media screen and (min-resolution: 200dpi) and (min-width: 660px) {
   .header-content {
-    background-image: url("../../images/back-tablet@2x.jpg"); } }
+    background-image: url("../../imagesmin/back-tablet@2x.jpg"); } }
 
 @media screen and (min-width: 1025px) {
   .header-content {
-    background-image: url("../../images/back-desktop@1x.jpg");
+    background-image: url("../../imagesmin/back-desktop@1x.jpg");
     min-height: 853px;
     max-width: 2560px; }
   .header-content__iphone5-in-hand-img {
@@ -153,7 +153,7 @@
 
 @media screen and (min-resolution: 200dpi) and (min-width: 1025px) {
   .header-content {
-    background-image: url("../../images/back-desktop@2x.jpg"); } }
+    background-image: url("../../imagesmin/back-desktop@2x.jpg"); } }
 
 .main-content {
   position: relative;
@@ -193,7 +193,7 @@
   margin-bottom: 0; }
 
 .features {
-  background-image: url("../../images/grey-shape-mobile.svg");
+  background-image: url("../../imagesmin/grey-shape-mobile.svg");
   background-repeat: no-repeat;
   background-position-y: -35px;
   text-align: center; }
@@ -201,7 +201,7 @@
 .features__wrapper {
   padding: 20px;
   padding-top: 85px;
-  background-image: url("../../images/iphone-features-mobile.svg");
+  background-image: url("../../imagesmin/iphone-features-mobile.png");
   background-position: 50% 97%;
   background-repeat: no-repeat;
   min-height: 828px; }
@@ -229,14 +229,14 @@
 
 @media screen and (min-width: 768px) {
   .features {
-    background-image: url("../../images/grey-shape-tablet.svg");
+    background-image: url("../../imagesmin/grey-shape-tablet.svg");
     background-position-y: -7px;
     height: 500px;
     text-align: left; }
   .features__wrapper {
     padding: 20px;
     padding-top: 75px;
-    background-image: url("../../images/iphone-features-tablet.svg");
+    background-image: url("../../imagesmin/iphone-features-tablet.png");
     background-position: 20px 5%;
     background-repeat: no-repeat; }
   .features__list {
@@ -252,7 +252,7 @@
 
 @media screen and (min-width: 1025px) {
   .features {
-    background-image: url("../../images/grey-shape-desktop.svg");
+    background-image: url("../../imagesmin/grey-shape-desktop.svg");
     background-position-y: unset;
     height: 700px; }
   .features__wrapper {
@@ -273,7 +273,7 @@
   .features__item--first,
   .features__item--second,
   .features__item--third {
-    background-image: url("../../images/iphone-features-desktop.svg");
+    background-image: url("../../imagesmin/iphone-features-desktop.png");
     background-repeat: no-repeat;
     background-position-x: 50%;
     min-height: 500px; }
@@ -884,7 +884,7 @@
   font-style: normal; }
 
 .contacts__triangle {
-  background-image: url("../../images/icons/triangle-white-contacts-mobile.svg");
+  background-image: url("../../imagesmin/icons/triangle-white-contacts-mobile.svg");
   width: 100%;
   height: 200px;
   background-position: 0 37px;
@@ -1005,20 +1005,20 @@
 .price {
   padding-top: 91px;
   padding-bottom: 32px;
-  background-image: url("../../images/grey-shape-mobile.svg");
+  background-image: url("../../imagesmin/grey-shape-mobile.svg");
   background-position: 0 -41px;
   background-repeat: no-repeat; }
   @media screen and (min-width: 768px) {
     .price {
       padding-top: 86px;
       padding-bottom: 69px;
-      background-image: url("../../images/grey-shape-tablet.svg");
+      background-image: url("../../imagesmin/grey-shape-tablet.svg");
       background-position: 0 0; } }
   @media screen and (min-width: 1025px) {
     .price {
       padding-top: 150px;
       padding-bottom: 95px;
-      background-image: url("../../images/grey-shape-desktop.svg");
+      background-image: url("../../imagesmin/grey-shape-desktop.svg");
       background-position: 0 0; } }
 
 .price__slider {
@@ -1205,7 +1205,7 @@
 .map {
   position: relative;
   z-index: 1;
-  background-image: url("../../images/map-desktop@1x.jpg");
+  background-image: url("../../imagesmin/map-desktop@1x.jpg");
   background-repeat: no-repeat;
   height: 300px;
   background-position-y: -442px;
@@ -1213,12 +1213,12 @@
   background-size: cover; }
   @media screen and (min-width: 768px) {
     .map {
-      background-image: url("../../images/map-tablet@1x.jpg");
+      background-image: url("../../imagesmin/map-tablet@1x.jpg");
       height: 373px;
       background-position-y: -330px; } }
   @media screen and (min-width: 1025px) {
     .map {
-      background-image: url("../../images/map-desktop@1x.jpg");
+      background-image: url("../../imagesmin/map-desktop@1x.jpg");
       height: 501px;
       background-position-y: -535px;
       background-size: unset; } }

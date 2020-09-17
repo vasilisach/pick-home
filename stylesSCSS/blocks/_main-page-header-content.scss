@@ -1,13 +1,13 @@
 .header-content {
   position: relative;
   color: $white;
-  background-image: url("../../images/back-mobile@1x.jpg");
+  background-image: url("../../imagesmin/back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 462px;
   @media screen and (min-resolution: $retina-dpi) and (min-width: 320px) {
-    background-image: url("../../images/back-mobile@2x.jpg");
+    background-image: url("../../imagesmin/back-mobile@2x.jpg");
   }
   &__iphone5-in-hand-img {
     position: absolute;
@@ -52,7 +52,7 @@
 
 @media screen and (min-width: $tablet-width) {
   .header-content {
-    background-image: url("../../images/back-tablet@1x.jpg");
+    background-image: url("../../imagesmin/back-tablet@1x.jpg");
     background-position: cover;
     min-height: 729px;
     max-width: 1025px;
@@ -78,12 +78,12 @@
 }
 @media screen and (min-resolution: $retina-dpi) and (min-width: 660px) {
   .header-content {
-    background-image: url("../../images/back-tablet@2x.jpg");
+    background-image: url("../../imagesmin/back-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1025px) {
   .header-content {
-    background-image: url("../../images/back-desktop@1x.jpg");
+    background-image: url("../../imagesmin/back-desktop@1x.jpg");
     min-height: 853px;
     max-width: 2560px;
   }
@@ -118,6 +118,6 @@
 }
 @media screen and (min-resolution: $retina-dpi) and (min-width: 1025px) {
   .header-content {
-    background-image: url("../../images/back-desktop@2x.jpg");
+    background-image: url("../../imagesmin/back-desktop@2x.jpg");
   }
 }
