@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: $tablet-width) {
   .main-content {
     top: 0;
   }

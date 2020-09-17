@@ -1,4 +1,4 @@
-(function() {
+(function () {
   //review slider
   $('#review-slides').slick({
     dots: false
@@ -59,7 +59,10 @@
       $("#review-slides").slick('slickGoTo', indexNextButton);
     } else {
       let priceTable = document.querySelector('.price__table');
-      priceTable.style.left = `${(150 - indexNextButton * 100)}%`;
+      const columnWidth = parseInt(getComputedStyle(priceTable).width) / 3;
+      if (indexNextButton === 2) priceTable.style.left = `${50 - (columnWidth/document.body.clientWidth)*100}%`;
+      if (indexNextButton === 1) priceTable.style.left = `50%`;
+      if (indexNextButton === 0) priceTable.style.left = `${50 + (columnWidth/document.body.clientWidth)*100}%`;
     }
   }
 })()

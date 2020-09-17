@@ -1,6 +1,6 @@
 .page-footer {
   display: none;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     display: block;
   }
 }
@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     padding: 0 20px;
     height: 127px;
   }
@@ -30,7 +30,7 @@
   }
   &--tablet {
     display: none;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $tablet-width) {
       display: block;
     }
     @media screen and (min-width: 1025px) {
@@ -53,7 +53,7 @@
   padding-top: 39px;
   padding-bottom: 39px;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -66,7 +66,7 @@
 .social-links__item {
   margin: 0 6px;
   list-style: none;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     margin: 0 3px 0 9px;
   }
 

@@ -1,7 +1,7 @@
 .efficiency {
   display: none;
   position: relative;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     display: block;
     background-color: $white;
   }
@@ -16,7 +16,7 @@
   padding: 60px 20px 72px;
   width: 280px;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -35,7 +35,7 @@
 }
 
 .efficiency__image-timer {
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     width: 238px;
     height: 276px;
     position: absolute;
@@ -51,7 +51,7 @@
   }
 }
 .efficiency__image-round-diagram {
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     width: 202px;
     height: 202px;
     position: absolute;
@@ -85,10 +85,10 @@
 
   @media screen and (min-width: 1025px) {
     margin-top: 65px;
-    max-width: 490px;
+    max-width: 460px;
     font-size: 18px;
     line-height: 30px;
-    margin-left: 15px;
+    margin-left: 5%;
   }
 }
 

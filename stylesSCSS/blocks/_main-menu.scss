@@ -1,7 +1,7 @@
 .menu-icon {
   cursor: pointer;
-  display: flex;
-  align-self: center;
+  display: block;
+  height: 30px;
   &:hover &__button,
   &:hover &__button::before,
   &:hover &__button::after{
@@ -62,6 +62,9 @@
   margin-left: 20px;
 }
 @media screen and (min-width: 1025px) {
+  .menu-icon {
+    height: auto;
+  }
   .menu-icon__button {
     display: none;
   }

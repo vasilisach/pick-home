@@ -25,10 +25,14 @@ html {
 
 body {
   min-width: 320px;
+  max-width: 1400px;
   overflow-x: hidden;
   font-family: 'Open Sans';
   color: #283645;
   margin: 0;
+  @media screen and (min-width: 1400px){
+    margin: 0 auto;
+  }
 }
 
 .container {

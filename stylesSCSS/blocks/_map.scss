@@ -1,13 +1,14 @@
 .map {
   position: relative;
   z-index: 1;
-  background-image: url('../../images/map-mobile@1x.jpg');
+  background-image: url('../../images/map-desktop@1x.jpg');
   background-repeat: no-repeat;
-  height: 200px;
+  height: 300px;
   background-position-y: -442px;
   background-position: center;
+  background-size: cover;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     background-image: url('../../images/map-tablet@1x.jpg');
     height: 373px;
     background-position-y: -330px;
@@ -16,14 +17,15 @@
   @media screen and (min-width: 1025px) {
     background-image: url('../../images/map-desktop@1x.jpg');
     height: 501px;
-    background-position: -535px;
+    background-position-y: -535px;
+    background-size: unset;
   }
 }
 .map__marker {
   position: relative;
   top: 50%;
   left: 42%;
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-width) {
     top: 58%;
     left: 47%;
   }
